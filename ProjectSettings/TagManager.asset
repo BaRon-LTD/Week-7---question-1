@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Sheep
   - Pickaxe
+  - Boat
   layers:
   - Default
   - TransparentFX
