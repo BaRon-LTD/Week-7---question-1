@@ -879,7 +879,7 @@ GameObject:
   - component: {fileID: 510507050}
   - component: {fileID: 510507049}
   - component: {fileID: 510507053}
-  - component: {fileID: 510507052}
+  - component: {fileID: 510507054}
   m_Layer: 0
   m_Name: Sheep
   m_TagString: Sheep
@@ -979,33 +979,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &510507052
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 510507048}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!70 &510507053
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1043,6 +1016,33 @@ CapsuleCollider2D:
   m_Offset: {x: -0.036945067, y: -0.014777643}
   m_Size: {x: 0.7474575, y: 0.7474575}
   m_Direction: 0
+--- !u!50 &510507054
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510507048}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1984,12 +1984,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1201778215}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 808f756acb6b9bb4291738ba0f12cdf7, type: 3}
+  m_Script: {fileID: 11500000, guid: fa2a7b9e2ce53684ebf30e46f189299b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mountKey: 32
-  dismountKey: 32
-  TagSheep: Sheep
+  sheep: {fileID: 510507048}
+  detectionRadius: 2
 --- !u!1 &1338430482
 GameObject:
   m_ObjectHideFlags: 0
